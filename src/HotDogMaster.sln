@@ -3,11 +3,53 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32630.194
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E7F5341A-0B36-4D99-8FC3-1B036D1F3C1E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{0391CC09-B4CC-413E-925C-2015F28C54B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppHDM", "WpfAppHDM\WpfAppHDM.csproj", "{400C716C-0D79-4A46-BBA7-E04212410EBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModels", "DataModels\DataModels.csproj", "{F13A817D-9FD2-4DFB-96DD-91AF20B4373F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreModel", "CoreModel\CoreModel.csproj", "{D62F1743-2232-4D27-8B5F-EE937616AB60}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F13A817D-9FD2-4DFB-96DD-91AF20B4373F} = {F13A817D-9FD2-4DFB-96DD-91AF20B4373F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppCaptcha", "Tests\WpfAppCaptcha\WpfAppCaptcha.csproj", "{8B6CF519-35C6-4F67-BD31-54D377648E06}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{400C716C-0D79-4A46-BBA7-E04212410EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{400C716C-0D79-4A46-BBA7-E04212410EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{400C716C-0D79-4A46-BBA7-E04212410EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{400C716C-0D79-4A46-BBA7-E04212410EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F13A817D-9FD2-4DFB-96DD-91AF20B4373F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F13A817D-9FD2-4DFB-96DD-91AF20B4373F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F13A817D-9FD2-4DFB-96DD-91AF20B4373F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F13A817D-9FD2-4DFB-96DD-91AF20B4373F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D62F1743-2232-4D27-8B5F-EE937616AB60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62F1743-2232-4D27-8B5F-EE937616AB60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62F1743-2232-4D27-8B5F-EE937616AB60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62F1743-2232-4D27-8B5F-EE937616AB60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B6CF519-35C6-4F67-BD31-54D377648E06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B6CF519-35C6-4F67-BD31-54D377648E06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B6CF519-35C6-4F67-BD31-54D377648E06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B6CF519-35C6-4F67-BD31-54D377648E06}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F13A817D-9FD2-4DFB-96DD-91AF20B4373F} = {0391CC09-B4CC-413E-925C-2015F28C54B8}
+		{D62F1743-2232-4D27-8B5F-EE937616AB60} = {0391CC09-B4CC-413E-925C-2015F28C54B8}
+		{8B6CF519-35C6-4F67-BD31-54D377648E06} = {E7F5341A-0B36-4D99-8FC3-1B036D1F3C1E}
+	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9D04B5CF-AAE3-4A53-9EF5-214B08C6A595}
+		SolutionGuid = {4B11F844-FFEE-42B0-8D0F-35305AD31AB8}
 	EndGlobalSection
 EndGlobal
